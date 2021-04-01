@@ -17,7 +17,7 @@ const cardsContentList = [
   {
     ttl: 'Uber',
     src: 'https://docornotadoc.github.io/uber',
-    imgSrc: '.https://github.com/DocOrNotADoc/docornotadoc.github.io/blob/main/img/uber.png',
+    imgSrc: 'https://github.com/DocOrNotADoc/docornotadoc.github.io/blob/main/img/uber.png',
     descr: 'Вёрстка из PSD-макета. Адаптивная вёрстка. Добавление "гамбургера" и всплывающего меню для планшетов и мобильных устройств. Учебный проект по вёрстке. Один из первых. Достаточно красивый, но не слишком сложный. Не содержит карточек товаров, анимаций, интерактивной карты. SASS, HTML; bootstrap, flexbox'
   }
 ]
