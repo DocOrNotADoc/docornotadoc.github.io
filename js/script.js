@@ -88,9 +88,4 @@ menuItem.forEach(item => {
     body.classList.toggle('fixed');
   })
 })
-
-
-
-
-
 });
