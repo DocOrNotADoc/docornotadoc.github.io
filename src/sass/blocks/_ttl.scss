@@ -1,0 +1,26 @@
+.ttl {
+  font-weight: 700;
+  &__subttl {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__main-ttl {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  &__regular {
+    margin-top: 4px;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  &__text-columns {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+}

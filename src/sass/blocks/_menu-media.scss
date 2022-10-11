@@ -1,0 +1,17 @@
+.menu {
+  @media (max-width: 767px) {
+    &__socials {
+      bottom: 14vh;
+      a {
+        margin: 0 7px;
+        hover: none;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+  &__block {
+    width: 260px;
+    padding-left: 20px;
+  }
+  }
+}

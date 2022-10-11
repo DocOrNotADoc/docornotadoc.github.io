@@ -1,0 +1,30 @@
+.promo {
+  @media (max-width: 1399px) {
+
+  }
+  @media (max-width: 1199px) {
+    padding-top: 34vh;
+    background-position-x: 59%;
+  }
+  @media (max-width: 991px) {
+    padding-top: 34vh;
+    &__ttl {
+      margin-top: 9px;
+    }
+    &__btns {
+      margin-top: 32px;
+    }
+  }
+
+  // tab
+  @media (max-width: 767px) {
+    // с учетом строки galaxy tab a
+    // height: 91vh;
+  }
+
+  //cell
+  @media (max-width: 575px) {
+    background: url('../img/main_bg-cell.jpg') no-repeat 50% / cover;
+
+  }
+}

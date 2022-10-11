@@ -1,0 +1,32 @@
+// =before-circle {
+// @mixin before-circle {
+//   position: relative;
+//   z-index: 2;
+//   &:before{
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     width: 36px;
+//     height: 36px;
+//     background-color: $main-color;
+//     border-radius: 100%;
+//     z-index: -1;
+//   }
+// }
+// @mixin before-divider {
+//   position: relative;
+//   z-index: 2;
+//   &:after{
+//     content: '';
+//     position: absolute;
+//     width: 60px;
+//     height: 3px;
+//     background-color: $main-color;
+//     z-index: -1;
+//   }
+// }
+@mixin regular-text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}

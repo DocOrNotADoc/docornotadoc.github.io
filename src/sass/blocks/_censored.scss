@@ -1,0 +1,39 @@
+.censored {
+  $steps: 20;
+
+  position: relative;
+  -webkit-background-clip: text;
+
+  &::before, &::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      color: $darkfont;
+      clip: rect(0, 900px, 0, 0);
+      overflow: hidden;
+  }
+  @keyframes glitch-effect{
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip: rect(random(20) + px, 9999px, random(20) + px, 0);
+      }
+    }
+  }
+  &::before {
+    left: 5px;
+    text-shadow: 1px 0 red;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+  }
+  &::after {
+    left: 2px;
+    text-shadow: -1px 0 blue;
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+  }
+  &__p {
+    font-size: 13px;
+    color: #585858;
+  }
+}

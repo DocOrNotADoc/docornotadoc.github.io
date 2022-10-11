@@ -1,0 +1,45 @@
+.portfolio {
+  @media (max-width: 1199px) {
+    padding-top: 78px;
+    &__wrapper {
+    margin-top: 60px;
+    grid-template: repeat(2, 280px) / repeat(3, 280px);
+    gap: 17px;
+      .vertical {
+        grid-row: auto;
+        grid-column: auto;
+      }
+      .horizontal {
+        &-l, &-r, &-c {
+          grid-row: auto;
+          grid-column: auto;
+        }
+      }
+    }
+    &__item {
+      img {
+        filter: unset;
+        // hover: none;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding-top: 67px;
+    &__wrapper {
+      grid-template: repeat(2, 280px) / repeat(2, 280px);
+      gap: 28px;
+    }
+  }
+  //cell
+  @media (max-width: 575px) {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 55px;
+      grid-template: repeat(2, 280px) / repeat(1, 280px);
+      gap: 20px;
+      .first {
+        grid-row: 1 / 2;
+      }
+    }
+  }
+}

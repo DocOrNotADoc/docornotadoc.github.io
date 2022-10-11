@@ -1,0 +1,37 @@
+.price {
+  padding-top: 66px;
+  &__list {
+    display: grid;
+    justify-content: space-between;
+    grid-template: repeat(3, minmax(44px, auto)) /  repeat(2, 368px);
+    grid-auto-rows: 44px;
+    row-gap: 15px;
+    column-gap: 35px;
+    margin-top: 91px;
+    padding: 0 50px;
+    &-item {
+      padding-left: 25px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $main-color;
+      }
+      &__price {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        row-gap: 5px;
+      }
+      p {
+        margin-top: 5px;
+        @include regular-text;
+      }
+    }
+  }
+}

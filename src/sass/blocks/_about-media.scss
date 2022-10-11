@@ -1,0 +1,40 @@
+.about {
+
+  @media (max-width: 1199px) {
+    &__wrapper {
+      gap: 47px;
+    }
+    &__skills {
+      grid-template-columns: calc(100% - 14px);
+    }
+  }
+  @media (max-width: 991px) {
+    &__wrapper {
+      grid-template-columns: auto;
+      gap: 45px;
+    }
+    &__photo {
+      display: none;
+    }
+    &__skills {
+      grid-template: repeat(1, 1fr) /  515px;
+    }
+  }
+  @media (max-width: 575px) {
+    &__wrapper {
+      grid-template-columns: auto;
+    }
+    &__photo {
+      display: block;
+      width: 300px;
+      height: 340px;
+      justify-self: center;
+    }
+    &__me {
+      margin-top: 35px;
+    }
+    &__skills {
+      grid-template-columns: calc(100% - 14px);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.sidepanel {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 340px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2vw;
+  z-index: 8;
+  &__link {
+    transform: rotate(-90deg);
+    &:hover {
+      transform: scale(1.3) rotate(-90deg);
+      transition: $transition;
+    }
+    .censored {
+      font-weight: 700;
+      // &::before, &::after {
+      //   background: green;
+      // }
+    }
+  }
+  &__divider {
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+  }
+  &__text {
+    width: 24px;
+    height: 148px;
+    font-size: 16px;
+    font-weight: 700;
+    span {
+      display: block;
+      transform: rotate(-90deg) translate(-41%, -260%);
+      width: 148px;
+    }
+  }
+}

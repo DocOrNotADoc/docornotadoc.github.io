@@ -1,0 +1,67 @@
+.benefit {
+  padding-bottom: 37px;
+  background-color: $bgc;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 136px;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 85px;
+  }
+  &__column {
+    &_ttl {
+      position: relative;
+      padding-left: 35px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background-color: $main-color;
+        border-radius: 100%;
+      }
+    }
+  }
+  &__item {
+    margin-top: 45px;
+    max-width: 375px;
+    position: relative;
+    margin-left: 35px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: calc(100% + 47px);
+      top: -52px;
+      left: -28px;
+      background-color: $darkfont;
+      z-index: 1;
+    }
+    &-head {
+      display: grid;
+      position: relative;
+      grid-template-columns: 40px auto;
+      gap: 20px;
+      &_descr {
+        @include regular-text;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 1px;
+        top: 17px;
+        left: -28px;
+        background-color: $darkfont;
+        z-index: 1;
+      }
+    }
+    &-text {
+      margin-top: 12px;
+      @include regular-text;
+    }
+  }
+}

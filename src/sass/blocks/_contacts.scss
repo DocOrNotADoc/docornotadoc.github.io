@@ -1,0 +1,121 @@
+.contacts {
+  padding-bottom: 90px;
+  background-color: $bgc;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 400px auto;
+    column-gap: 68px;
+    padding-left: 50px;
+  }
+  &__photo {
+    width: 400px;
+    height: 600px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__to-social {
+    margin-top: 24px;
+  }
+  &__form-ttl, &__socials {
+    margin-top: 20px;
+  }
+  &__info {
+    &-item {
+      display: grid;
+      grid-template: minmax(20px, auto) / 30px auto;
+      gap: 10px;
+      max-width: 550px;
+      // span {
+      //   font-weight: 700;
+      // }
+      &:hover {
+        img {
+          transform: scale(1.2);
+          transition: $transition;
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 20px;
+      }
+
+    }
+  }
+  &__socials {
+    display: flex;
+    a {
+      display: block;
+      margin-right: 25px;
+      width: 30px;
+      height: 30px;
+      &:hover {
+        transform: scale(1.2);
+        transition: $transition;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template: 45px 190px 45px / repeat(2, 280px);
+    column-gap: 25px;
+    row-gap: 29px;
+  }
+  &__input, &__textarea {
+    position: relative;
+    input, textarea {
+      width: 100%;
+      height: 100%;
+      border: 1px solid $darkfont;
+      padding: 14px 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $darkfont;
+    }
+    label {
+      position: absolute;
+      display: block;
+      left: 12px;
+      top: -9px;
+      height: 18px;
+      padding: 0 8px;
+      background-color: #fff;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: 500;
+      color: $darkfont;
+      border: none;
+    }
+  }
+  &__textarea {
+    grid-column: 1 / 3;
+    textarea {
+      resize: none;
+    }
+  }
+  &__triggers {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 35px;
+    justify-content: start;
+  }
+  &__policy {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 13px;
+    span {
+      @include regular-text;
+    }
+  }
+}

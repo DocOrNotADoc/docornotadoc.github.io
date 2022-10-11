@@ -1,0 +1,29 @@
+.benefit {
+  @media (max-width: 1199px) {
+    padding-bottom: 22px;
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+  }
+  @media (max-width: 991px) {
+    padding-bottom: 23px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      width: 83%;
+      margin: 55px auto 0 auto;
+    }
+    &__item {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 0;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      width: 100%;
+    }
+  }
+}

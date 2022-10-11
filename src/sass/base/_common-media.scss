@@ -1,0 +1,30 @@
+.container {
+  @media (max-width: 1399px) {
+    width: 84vw;
+  }
+  @media (max-width: 1199px) {
+    width:82vw;
+  }
+  @media (max-width: 991px) {
+    width:78vw;
+  }
+  @media (max-width: 767px) {
+    
+  }
+  @media (max-width: 575px) {
+    width: 100vw;
+    padding: 0 4vw;
+  }
+}
+
+.pt-regular {
+  @media (max-width: 1199px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 991px) {
+    padding-top: 88px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 40px;
+  }
+}

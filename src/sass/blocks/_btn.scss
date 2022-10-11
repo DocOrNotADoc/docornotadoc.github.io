@@ -1,0 +1,32 @@
+.btn {
+  height: 45px;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: $transition;
+  color: $darkfont;
+  border: none;
+  white-space: nowrap;
+  &:hover {
+    color: $darkfont;
+  }
+  &__primary {
+    background-color: $main-color;
+    box-shadow: 0px 4px 4px rgba($darkfont, .1);
+    &:hover {
+      border-radius: 2px;
+      background-color: darken($main-color, 3%);
+      box-shadow: 0px 4px 4px rgba($darkfont, .20);
+    }
+  }
+  &__transparent {
+    margin-left: 18px;
+    background-color: transparent;
+    &:hover {
+      border-radius: 2px;
+      background-color: rgba($darkfont, .15);
+      box-shadow: 0px 4px 4px rgba($darkfont, .20);
+    }
+  }
+}

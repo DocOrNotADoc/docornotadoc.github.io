@@ -1,0 +1,56 @@
+.skills {
+  background-color: $bgc;
+  &__list {
+    display: grid;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    grid-auto-rows: minmax(270px, auto);
+    gap: 13px;
+    margin-top: 85px;
+    justify-content: center;
+    &-item {
+      padding: 30px;
+      border: 1px solid $darkfont;
+      width: 100%;
+      height: 100%;
+      &__img {
+        height: 65px;
+        margin-bottom: 20px;
+        svg {
+          max-height: 100%;
+        }
+      }
+      &__descr {
+        margin-top: 15px;
+        @include regular-text;
+      }
+    }
+  }
+  &__skales-list {
+    display: grid;
+    grid-template: repeat(2, minmax(70px, auto)) / repeat(2, 350px);
+    grid-auto-rows: minmax(70px, auto);
+    row-gap: 30px;
+    column-gap: 55px;
+    justify-content: center;
+  }
+  &__skale {
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__progress {
+      height: 100%;
+      border-radius: 4px;
+      background-color: $main-color;
+      &bar {
+        margin-top: 27px;
+        width: 100%;
+        height: 14px;
+        border-radius: 4px;
+        background-color: #E8E4DE;
+        overflow: hidden;
+      }
+    }
+  }
+}

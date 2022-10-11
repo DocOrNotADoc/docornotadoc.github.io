@@ -1,0 +1,35 @@
+.ttl {
+  // @media (max-width: 1399px) {
+
+  // }
+  @media (max-width: 1199px) {
+    &__regular {
+      margin-top: 3px;
+      font-size: 33px;
+    }
+  }
+  @media (max-width: 991px) {
+    &__main-ttl {
+      font-size: 43px;
+      line-height: 56px;
+    }
+  }
+
+  // tab
+  @media (max-width: 767px) {
+    
+  }
+
+  //cell
+  @media (max-width: 575px) {
+    &__main-ttl {
+      font-size: 26px;
+      line-height: 39px;
+    }
+    &__regular {
+      margin-top: 26px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

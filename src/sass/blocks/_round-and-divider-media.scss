@@ -1,0 +1,10 @@
+.divider {
+  @media (max-width: 991px) {
+    bottom: -4px;
+  }
+  @media (max-width: 575px) {
+    &:after {
+      bottom: -12px;
+    }
+  }
+}

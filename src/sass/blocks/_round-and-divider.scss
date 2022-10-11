@@ -1,0 +1,64 @@
+.round {
+  position: relative;
+  z-index: 2;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    background-color: $main-color;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  &_left {
+    padding: 7px 0 0 10px;
+    &:before {
+      left: 0;
+    }
+    &-sm {
+      padding: 8px 0 0 10px;
+      &:before {
+        left: 0;
+      }
+    }
+  }
+  &_icon {
+    padding: 15px 0 0 15px;
+    &:before {
+      left: 0;
+    }
+  }
+  &_center {
+      padding-top: 7px;
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.divider {
+  position: relative;
+  z-index: 2;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    z-index: -1;
+  }
+  &_left {
+    &:after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &_center {
+    &:after {
+      left: 50%;
+      bottom: -21px;
+      transform: translateX(-50%);
+    }
+  }
+}

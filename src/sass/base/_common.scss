@@ -1,0 +1,34 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $darkfont;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+h1, h2, h3, h4, h5, ul, p, label {
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.pt-regular {
+  padding-top: 120px;
+}
+.tac {
+  text-align: center;
+}
