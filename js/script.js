@@ -1,3 +1,22 @@
+// theme switcher
+const themeSwitch = document.querySelector('#theme-switcher');
+
+themeSwitch.addEventListener('click', () => {
+  const docEl = document.documentElement;
+  if (docEl.classList.contains('light')){
+    docEl.classList.remove('dark', 'light');
+    docEl.classList.add('dark');
+    console.log('click');
+  } else {
+    docEl.classList.remove('dark', 'light');
+    docEl.classList.add('light');
+    console.log('pew');
+  }
+
+
+});
+
+
 // show & hide menu, scroll block, compensate scrollbar-padding, esc menu if resize
 const burger = document.querySelector('.hamburger'),
   menu = document.querySelector('.menu'),
